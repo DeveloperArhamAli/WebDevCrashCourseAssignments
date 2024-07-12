@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+height: 100%;
+width: 100%;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 2px solid #000000;
+    padding: 0 30px;
+}
+
+.nav a{
+    text-decoration: underline;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .8s;
+}
