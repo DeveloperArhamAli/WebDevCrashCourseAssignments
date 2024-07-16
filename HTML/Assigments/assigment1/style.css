@@ -8,10 +8,21 @@ html , body{
     width: 100%;
 }
 
-.main{
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    border-bottom: 2px solid #000000;
+    padding: 0 30px;
+}
+
+.nav a{
+    text-decoration: underline;
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    transition: .8s;
 }
 
 .sidebar{
@@ -65,38 +76,10 @@ html , body{
     display: none;
 }
 
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    border-bottom: 2px solid #000000;
-    padding: 0 30px;
-}
-
-.nav a{
-    text-decoration: underline;
-    color: #000000;
-    font-size: 20px;
-    font-weight: 500;
-    transition: .8s;
-}
-
-.slider{
-    display: none;
-}
-
-.heading{
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 90px;
-    font-size: 25px;
-}
-
 @media (max-width: 720px ) {
+    body{
+        padding: 30px;
+    }
     .nav{
         display: none;
     }
@@ -104,6 +87,15 @@ html , body{
         display: block;
         font-size: 2rem;
         width: 100%; 
+    }
+    .content h1{
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    
+    .content p{
+        font-size: 40px;
     }
     .sidebar{
         left: -100%;
