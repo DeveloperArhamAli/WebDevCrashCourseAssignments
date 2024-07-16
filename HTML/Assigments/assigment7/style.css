@@ -24,8 +24,8 @@ html , body{
 }
 
 .cross{
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -46,7 +46,7 @@ html , body{
 }
 
 .navbar a{
-    font-size: 90px;
+    font-size: 40px;
     text-decoration: none;
     color: #000000;
     text-align: center;
@@ -133,4 +133,3 @@ th, td{
         transition: left .8s ease;
     }
 }
-
