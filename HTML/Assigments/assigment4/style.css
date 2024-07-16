@@ -8,9 +8,55 @@ html , body{
     width: 100%;
 }
 
-.main{
-height: 100%;
-width: 100%;
+.sidebar{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    display: none;
+}
+
+.closer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cross{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 55px;
+    border: 2px solid #000000;
+}
+
+.cross h1{
+    font-size: 50px;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+}
+
+.navbar a{
+    font-size: 90px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+
+.navbar :nth-child(1){
+    margin-top: 160px;
+}
+
+.slider{
+    display: none;
 }
 
 .nav{
@@ -28,4 +74,51 @@ width: 100%;
     font-size: 20px;
     font-weight: 500;
     transition: .8s;
+}
+
+.content{
+    text-align: center;
+}
+
+@media (max-width: 720px ) {
+    body{
+        padding: 30px;
+    }
+    .nav{
+        display: none;
+    }
+    .slider{
+        display: block;
+        font-size: 100px;
+        width: fit-content;
+    }
+    .content h1, .content h2{
+        font-size: 70px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .content a{
+        font-size: 40px;
+        margin-right: 15px;
+    }
+    .content img{
+        width: 80vw;
+    }
+    .content h3{
+        font-size: 30px;
+    }
+    .content li{
+        font-size: 30px;
+    }
+    .sidebar{
+        left: -100%;
+        top: 0;
+        position: absolute;
+        background-color: aqua;
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        transition: left .8s ease;
+    }
 }
