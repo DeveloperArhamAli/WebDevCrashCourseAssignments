@@ -16,43 +16,6 @@ html , body{
     background-color: aqua;
 }
 
-.head{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.head h1{
-    font-size: 50px;
-    font-weight: 900;
-}
-
-.head p{
-    font-size: 20px;
-    font-weight: 500;
-}
-
-.head a{
-    text-decoration: underline;
-    color: #000000;
-    transition: .8s;
-}
-
-.head a:hover{
-    text-decoration: underline;
-}
-
-.head h3{
-    margin-top: 50px;
-}
-
-.name{
-    margin-top: 50px;
-}
-
 .nav{
     display: flex;
     align-items: center;
@@ -87,4 +50,21 @@ html , body{
 
 .assigments a:hover{
     text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+    .nav h1, .nav a{
+        font-size: 50px;
+    }
+    .assigments{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 50px;
+    }
+    .assigments a{
+        font-size: 50px;
+        text-decoration: underline;
+    }
 }
