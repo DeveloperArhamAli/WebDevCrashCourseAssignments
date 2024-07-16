@@ -1,10 +1,41 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
+    <div class="sidebar">
+
+        <div class="closer">
+
+            <div></div>
+
+            <div>
+                <h1 class="cross">X</h1>
+            </div>
+
+        </div>
+
+
+
+        <div class="navbar">
+
+
+            <a href="../assigment1/index.html">Assignment 1</a>
+            <a href="../assigment2/index.html">Assignment 2</a>
+            <a href="../assigment3/index.html">Assignment 3</a>
+            <a href="../assigment4/index.html">Assignment 4</a>
+            <a href="../assigment5/index.html">Assignment 5</a>
+            <a href="../assigment6/index.html">Assignment 6</a>
+            <a href="../assigment7/index.html">Assignment 7</a>
+
+        </div>
+
+    </div>
 
     <div class="nav">
         <a href="../assigment1/index.html">Assignment 1</a>
@@ -15,130 +46,144 @@
         <a href="../assigment6/index.html">Assignment 6</a>
         <a href="../assigment7/index.html">Assignment 7</a>
     </div>
-<center>
-    <h1>Assignment 3</h1>
-</center>
 
-<h1>Part 1</h1>
+    <div><h1 class="slider">=</h1></div>
 
-<h1>Unordered List</h1>
-<ul>
-<li>Chocolates</li>
-<li>Biscuits
-<ul>
-<li>Jim Jam</li>
-<li>Oreo</li>
-</ul>
-</li>
-<li>Fruits</li>
-<li>Gifts</li>
-</ul>
+    <div class="content">
 
-<br>
-<hr>
+        <h1 class="heading">Assignment 3</h1>
+    
+        <h1>Part 1</h1>
+    
+        <h1>Unordered List</h1>
+        <ul>
+        <li>Chocolates</li>
+        <li>Biscuits
+        <ul>
+        <li>Jim Jam</li>
+        <li>Oreo</li>
+        </ul>
+        </li>
+        <li>Fruits</li>
+        <li>Gifts</li>
+        </ul>
+    
+        <br>
+        <hr>
+    
+        <h1>Part 2</h1>
+    
+        <h1>Nested List</h1>
+        <ol>
+        <li>chocolates
+        <ul>
+        <li>dairy milk</li>
+        <li>bournvile</li>
+        <li>munch</li>
+        </ul>
+        </li>
+        <li>games
+        <ul>
+        <li>cricket</li>
+        <li>hockey</li>
+        <li>football</li>
+        </ul>
+        </li>
+        <li>fruit
+        <ul>
+        <li>apple</li>
+        <li>orange</li>
+        <li>grapes</li>
+        </ul>
+        </li>
+        </ol>
+    
+        <br>
+        <hr>
+    
+        <h1>Part 3</h1>
+    
+        <h1>Welcome to GeeksforGeeks Learning</h1>
+        <p>List of available courses</p>
+        <ul>
+        <li>Data Structures and Algorithms</li>
+        <li>Web technology</li>
+        <li>Apptitude and logical reasoning</li>
+        <li>Programming Languages</li>
+        </ul>
+        <p>Data Structures Topics</p>
+        <ol>
+        <li>Array</li>
+        <li>Linked List</li>
+        <li>Stacks</li>
+        <li>Queues</li>
+        <li>Trees</li>
+        <li>Graphs</li>
+        </ol>
+    
+        <br>
+        <hr>
+    
+        <h1>Part 4</h1>
+    
+        <ol>
+        <li>Fruits
+        <ol>
+        <li>Mango</li>
+        <li>Orange</li>
+        </ol>
+        </li>
+        <li>Vegetables
+        <ol>
+        <li>Cabbage</li>
+        <li>Capsicum
+        <ol>
+        <li>Green Capsicum</li>
+        <li>Yellow Capsicum</li>
+        <li>Red Capsicum</li>
+        </ol>
+        </li>
+        </ol>
+        </li>
+        </ol>
+    
+        <br>
+        <hr>
+    
+        <h1>Part 5</h1>
+    
+        <ul>
+        <li>Fruit
+        <ul>
+        <li>Bananas</li>
+        <li>Apples
+        <ul>
+        <li>Green</li>
+        <li>Red</li>
+        </ul>
+        </li>
+        <li>Pears</li>
+        </ul>
+        </li>
+        <li>Vegetables</li>
+        <li>Meat</li>
+        </ul>
+    
+        <h1> Muhammad Arham Ali Khan <br> Roll No 4277 </h1>
+        
+    </div>
 
-<h1>Part 2</h1>
+    <script>
 
-<h1>Nested List</h1>
-<ol>
-<li>chocolates
-<ul>
-<li>dairy milk</li>
-<li>bournvile</li>
-<li>munch</li>
-</ul>
-</li>
-<li>games
-<ul>
-<li>cricket</li>
-<li>hockey</li>
-<li>football</li>
-</ul>
-</li>
-<li>fruit
-<ul>
-<li>apple</li>
-<li>orange</li>
-<li>grapes</li>
-</ul>
-</li>
-</ol>
+        document.querySelector(".slider").addEventListener('click', function () {
+            document.querySelector(".sidebar").style.left = 0;
+        })
 
-<br>
-<hr>
+        document.querySelector(".cross").addEventListener('click', function(){
+            document.querySelector(".sidebar").style.left = "-100%";
+        })
 
-<h1>Part 3</h1>
-
-<h1>Welcome to GeeksforGeeks Learning</h1>
-<p>List of available courses</p>
-<ul>
-<li>Data Structures and Algorithms</li>
-<li>Web technology</li>
-<li>Apptitude and logical reasoning</li>
-<li>Programming Languages</li>
-</ul>
-<p>Data Structures Topics</p>
-<ol>
-<li>Array</li>
-<li>Linked List</li>
-<li>Stacks</li>
-<li>Queues</li>
-<li>Trees</li>
-<li>Graphs</li>
-</ol>
-
-<br>
-<hr>
-
-<h1>Part 4</h1>
-
-<ol>
-<li>Fruits
-<ol>
-<li>Mango</li>
-<li>Orange</li>
-</ol>
-</li>
-<li>Vegetables
-<ol>
-<li>Cabbage</li>
-<li>Capsicum
-<ol>
-<li>Green Capsicum</li>
-<li>Yellow Capsicum</li>
-<li>Red Capsicum</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-
-<br>
-<hr>
-
-<h1>Part 5</h1>
-
-<ul>
-<li>Fruit
-<ul>
-<li>Bananas</li>
-<li>Apples
-<ul>
-<li>Green</li>
-<li>Red</li>
-</ul>
-</li>
-<li>Pears</li>
-</ul>
-</li>
-<li>Vegetables</li>
-<li>Meat</li>
-</ul>
-
-<center>
-    <h1> Muhammad Arham Ali Khan <br> Roll No 4277 </h1>
-</center>
+    </script>
 
 </body>
-
-<html>
+</html>
