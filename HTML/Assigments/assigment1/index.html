@@ -1,33 +1,79 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    
+    <div class="main">
 
-    <div class="nav">
-        <a href="../assigment1/index.html">Assignment 1</a>
-        <a href="../assigment2/index.html">Assignment 2</a>
-        <a href="../assigment3/index.html">Assignment 3</a>
-        <a href="../assigment4/index.html">Assignment 4</a>
-        <a href="../assigment5/index.html">Assignment 5</a>
-        <a href="../assigment6/index.html">Assignment 6</a>
-        <a href="../assigment7/index.html">Assignment 7</a>
+        <div class="sidebar">
+
+            <div class="closer">
+
+                <div></div>
+
+                <div>
+                    <h1 class="cross">X</h1>
+                </div>
+
+            </div>
+
+
+
+            <div class="navbar">
+
+
+                <a href="../assigment1/index.html">Assignment 1</a>
+                <a href="../assigment2/index.html">Assignment 2</a>
+                <a href="../assigment3/index.html">Assignment 3</a>
+                <a href="../assigment4/index.html">Assignment 4</a>
+                <a href="../assigment5/index.html">Assignment 5</a>
+                <a href="../assigment6/index.html">Assignment 6</a>
+                <a href="../assigment7/index.html">Assignment 7</a>
+
+            </div>
+
+        </div>
+
+        <div class="nav">
+            <a href="../assigment1/index.html">Assignment 1</a>
+            <a href="../assigment2/index.html">Assignment 2</a>
+            <a href="../assigment3/index.html">Assignment 3</a>
+            <a href="../assigment4/index.html">Assignment 4</a>
+            <a href="../assigment5/index.html">Assignment 5</a>
+            <a href="../assigment6/index.html">Assignment 6</a>
+            <a href="../assigment7/index.html">Assignment 7</a>
+        </div>
+
+        <div><h1 class="slider">=</h1></div>
+
+        <div class="heading">
+
+            <h1>Assignment # 1 <br>My First Class</h1>    
+            <p>Hello World </p>
+            <h1> Muhammad Arham Ali Khan</h1>
+            <h1>Roll No 4277</h1>
+
+        </div>
+
+
     </div>
 
-    <center>
-        <h1>Assignment # 1</h1>
-    </center>
+    <script>
 
-    <center>
-        <h1>My First Class </h1>
-        
-        <p>Hello World </p>
-        
-        <h1> Muhammad Arham Ali Khan <br> Roll No 4277</h1>
-    </center>
+        document.querySelector(".slider").addEventListener('click', function () {
+            document.querySelector(".sidebar").style.left = 0;
+        })
+
+        document.querySelector(".cross").addEventListener('click', function(){
+            document.querySelector(".sidebar").style.left = "-100%";
+        })
+
+    </script>
 
 </body>
-
 </html>
