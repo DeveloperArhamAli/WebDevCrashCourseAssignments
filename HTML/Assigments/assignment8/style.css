@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.links{
+    width: 100%;
+    text-align: center;
+}
+
+ul{
+    width: 44%;
+    display: inline-block;
+    border-top: 2px solid #000000;
+    border-bottom: 1px solid #000000;
+}
+
+li{
+    padding: 20px;
+    display: inline-block;
+}
+
+.red{
+    color: red;
+}
+
+.image{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+img{
+    display: inline-block;
+}
+
+.paragraph{
+    width: 100%;
+}
+
+p{
+    text-align: center;
+    word-spacing: 3px;
+    margin-bottom: 100px;
+}
+
+h1{
+    text-align: center;
+}

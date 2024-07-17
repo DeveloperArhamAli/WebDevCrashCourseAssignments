@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html , body{
+    height: 100%;
+    width: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+
+.heading{
+    width: 100%;
+    text-align: center;
+}
+
+ul{
+    width: 44%;
+    display: inline-block;
+}
+
+li{
+    padding: 20px;
+    display: inline-block;
+}
+
+.container{
+    width: 70%;
+    margin-top: 60px;
+    padding: 10px;
+    border: 2px solid #000000;
+    display: inline-block;
+}
+
+.text{
+    display: inline-block;
+    width: 50%;
+}
+
+h1{
+    font-size: 60px;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.site{
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+img{
+    height: 30px;
+}
+
+.image{
+    display: inline-block;
+}
+
+.mainimage{
+    height: 400px;
+}
